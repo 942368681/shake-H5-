@@ -1,0 +1,196 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dd,dt,form,input,textarea,select{
+   margin: 0;
+   padding: 0;
+}
+ul,li{
+   list-style: none;
+}
+a{
+   text-decoration: none;
+}
+img{
+   display: block;
+   border: 0;
+}
+html,body{
+   height: 100%;
+}
+#content{
+   width: 100%;
+   height: 100%;
+   background: url('img/FvSlGT-tj6Yv14Y8co0a5V95Dn9r.png') no-repeat center;
+   background-size: 100% 100%;
+   position: relative;
+}
+.circle,.circleInside_1,.circleInside_2{
+   width: 12rem;
+   height: 12rem;
+   position: absolute;
+   left: 50%;
+   margin-left: -6rem;
+   top: 1rem;
+   background-size: 100% 100%;
+}
+.circle{
+   z-index: 2;
+   background: url('img/FpK2lCSL0g_6EZk_4r-G455HbUXd.png') no-repeat center;
+}
+.circleInside_1{
+   z-index: 3;
+   background: url('img/FjKduFrLRgDLOgzrJGE_qG6f8kBT.png') no-repeat center;
+   animation: waver_1 0.5s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-timing-function: linear;
+   -webkit-animation: waver_1 0.5s;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: alternate;
+   -webkit-animation-timing-function: linear;
+}
+.circleInside_2{
+   z-index: 3;
+   background: url('img/Ft9xiUvG44PsDPGGemSwMUCRA7qR.png') no-repeat center;
+   animation: waver_2 0.5s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-timing-function: linear;
+   -webkit-animation: waver_2 0.5s;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: alternate;
+   -webkit-animation-timing-function: linear;
+}
+.yaoyiyao{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: url('img/Fgdl7fS2ts9w1-AN5Py-rB59IMYj.png') no-repeat center;
+   animation: shake 0.2s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-timing-function: linear;
+   -webkit-animation: shake 0.2s;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: alternate;
+   -webkit-animation-timing-function: linear;
+}
+.plate{
+   z-index: 1;
+   width: 12rem;
+   height: 12rem;
+   position: absolute;
+   left: 50%;
+   margin-left: -6rem;
+   top: 1rem;
+   background: url('img/Fo8cOeFpfKhBorTXDsDo76wYURwy.png') no-repeat center;
+   animation: around 5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   -webkit-animation: around 5s;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-timing-function: linear;
+}
+@keyframes around{
+   from{
+      transform: rotate(0deg);
+   }
+   to{
+      transform: rotate(360deg);
+   }
+}
+@-webkit-keyframes around{
+   from{
+      -webkit-transform: rotate(0deg);
+   }
+   to{
+      -webkit-transform: rotate(360deg);
+   }
+}
+@keyframes shake{
+   from{
+      transform: rotate(-20deg);
+   }
+   to{
+      transform: rotate(20deg);
+   }
+}
+@-webkit-keyframes shake{
+   from{
+      -webkit-transform: rotate(-20deg);
+   }
+   to{
+      -webkit-transform: rotate(20deg);
+   }
+}
+@keyframes waver_1{
+   from{
+      opacity: 0;
+   }
+   to{
+      opacity: 1;
+   }
+}
+@-webkit-keyframes waver_1{
+   from{
+      opacity: 0;
+   }
+   to{
+      opacity: 1;
+   }
+}
+@keyframes waver_2{
+   from{
+      opacity: 1;
+   }
+   to{
+      opacity: 0;
+   }
+}
+@-webkit-keyframes waver_2{
+   from{
+      opacity: 1;
+   }
+   to{
+      opacity: 0;
+   }
+}
+.count{
+   position: absolute;
+   width: 100%;
+   bottom: 8rem;
+}
+.count .number{
+   width: 100%;
+   height: 4rem;
+   position: relative;
+   margin-bottom: 1rem;
+}
+.count .number span{
+   position: absolute;
+   left: 50%;
+   height: 4rem;
+   padding: 0 1.5rem;
+   transform: translate(-50%);
+   -webkit-transform: rotate(-50%);
+   border-radius: 0.8rem;
+   background: rgba(255, 255, 255, .5);
+   font-size: 3rem;
+   line-height: 4rem;
+   text-align: center;
+   color: #666;
+}
+.count p{
+   height: 1rem;
+   font-size: 1rem;
+   line-height: 1rem;
+   text-align: center;
+   color: #333;
+   margin-bottom: 4rem;
+}
+.count .message{
+   height: 1rem;
+   font-size: 1rem;
+   line-height: 1rem;
+   text-align: center;
+   color: #fb4747;
+   margin-bottom: 0;
+}
